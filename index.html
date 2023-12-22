@@ -18,10 +18,11 @@
             background-attachment: fixed;
             margin: 0;
             padding: 0;
+            cursor: default;
         }
         .banner{
             background-color: #00000088;
-            height: 110vh;
+            height: 130vh;
             width: auto;
             /* display: flex; */
             justify-content: center;
@@ -36,8 +37,10 @@
             font-family: 'Yanone Kaffeesatz', sans-serif;
             align-items: center;
             /* gap: 10px; */
-            height: 50vh;
+            height: 50%;
             font-size: 1.5rem;
+            margin-bottom: 0;
+            /* margin-top: 50px; */
             background-color: rgba(0, 0, 0, 0);
         }
 
@@ -47,13 +50,14 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            text-shadow: 0 0 10px rgb(0, 0, 0);
         }
         .countdown{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 60vh;
+            height: 50%;
             
             background-color: rgba(127, 255, 212, 0);
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -61,16 +65,22 @@
         .C{
             color: #fc4700;
             /* font-size: 3rem; */
+            border-bottom: 3px solid #fc4700;
+            
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
         .I{
             color: whitesmoke;
             /* font-size: 3rem; */
+            display: flex;
+            flex-direction: column;
+            border-bottom: 3px solid whitesmoke;
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
         .CY{
             color: #08fc00;
             /* font-size: 3rem; */
+            border-bottom: 3px solid #09fc00;
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
     
@@ -183,6 +193,7 @@
         max-width: 800px;
         margin: 0 auto;
         display: flex;
+        /* margin-top: 0; */
         flex-direction: column;
         }
 
@@ -241,10 +252,13 @@
         justify-content: center;
         align-items: center;
         height: 50vh;
-    
+        margin-bottom: 0;
+        margin-top: 0;
         gap: 2rem;
+        border: 2px solid rgb(64, 68, 61);
+        box-shadow: 0 0 10px 10px rgba(94, 255, 0, 0.192);
      
-        background-color: rgba(0, 0, 0, 0.582);
+        background-color: rgba(0, 0, 0, 0.342);
     }
     .register a{
         color: white;
@@ -252,6 +266,8 @@
         text-decoration: none;
         font-family: sans-serif;
         border: 2px solid white;
+        margin-bottom: 0;
+
         padding: 10px;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.658);
@@ -271,9 +287,112 @@
         box-shadow: 0 0 10px 10px rgba(115, 255, 0, 0.192);
     }
 
+    @media screen and (max-width: 768px) {
+        .register .title{
+            font-size: 2rem;
+        }
+    }
 
-    
-    
+    .name .subtitle{
+        color: white;
+        font-size: 2rem;
+        font-family: sans-serif;
+        margin-top: 0;
+        text-shadow: 0 0 10px rgb(255, 102, 0);
+    }
+    .location {
+        /* display: flex; */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.295);
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        border: 2px solid rgb(64, 68, 61);
+        box-shadow: 0 0 10px 10px rgba(94, 255, 0, 0.192);
+        height: 50vh;
+        /* background-color: #1a1a1a31; */
+    }
+    .location iframe{
+        height: 80%;
+        width: 100%;
+        border: 2px solid rgb(77, 69, 69);
+        box-shadow: 0 0 10px 10px rgba(255, 102, 0, 0.192);
+    }
+    .location .title{
+        /* margin-top: 50px; */
+        font-size: 2rem;
+        /* height: 10%;
+         */
+        text-align: center;
+
+        padding: 5px;
+        margin: 0;
+        
+        justify-content: center;
+        text-shadow: 0 0 10px rgb(255, 102, 0);
+
+    }
+    .category {
+        height: auto;
+        background-color: #00000088;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px 10px rgba(11, 128, 0, 0.664);
+
+    }
+    .category .title {
+        margin: 0px;
+        /* margin-bottom: 10px; */
+        padding: 10px;
+        
+    }
+
+
+    .card {
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+    .card .text {
+        width: 50%;
+        height: 100%;
+        border: 3px solid rgb(65, 50, 50);
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    @media  screen and (max-width: 700px) {
+        .card{
+            height: 250px;
+        }
+        
+    }
+
+    .card .img {
+        width: 50%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(65, 50, 50);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        height: 100%;
+        width: auto;
+    }
+
+    .card .title {
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: antiquewhite;
+        text-align: center;
+        margin: 10px;
+    }
     
     
     </style>
@@ -287,8 +406,10 @@
                 
                 <h1 class="C">CENTRAL</h1>
                 <h1 class="I">INDIA</h1> 
-                <h1 class="CY">CYPHER</h1>
+                <h1 class="CY">CYPHERS</h1>
             </div>
+            <h1 class="subtitle">(Hip-Hop Jam and Workshops)</h1>
+
         </div>
         <div class="countdown">
             <script src="https://cdn.logwork.com/widget/countdown.js"></script>
@@ -362,8 +483,80 @@
     <div class="register">
         <h1 class="title">Please register yourself before 20th January to avail the early bird discounts.</h1>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK3ki6IRKN9GNgo7j86BYx0AiDlIV0F87s7eHZNeBaKivtdw/viewform">Register</a>
-
-
+    </div>
+    <div class="location">
+        <h1 class="title">Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5677563187587!2d79.92337360127415!3d23.172389524024755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1eedc67b49%3A0xcb7e08c835ddba77!2sRanital%20Sports%20Complex!5e0!3m2!1sen!2sin!4v1703222184207!5m2!1sen!2sin" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="category">
+        <h1 class="title">
+            Battle-Categories
+        </h1>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Breaking 1 vs 1</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="breck.webp" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Hip-Hop 1 vs 1</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="hip.avif" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Popping 1 vs 1</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="pop.jpg" alt="">
+            </div>
+        </div>    
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Footwork 1 vs 1</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="foot.jpeg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">B-Girl 1 vs 1</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="bgirl.avif" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Popping 2 vs 2</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="breck.webp" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h1 class="title">Rep Your Style 2 vs 2</h1>
+                <p>Participants are judged on their demonstration and performance of the essential foundations of Bboying and Bgirling consisting of top rock, up rock, legwork, footwork, power moves, freezes as well as the following: Style - feeling or expressing the moves, “flava”, the manner in which you present.</p>
+            </div>
+            <div class="img">
+                <img src="breck.webp" alt="">
+            </div>
+        </div>
+        
+        
     </div>
     
 </body>
